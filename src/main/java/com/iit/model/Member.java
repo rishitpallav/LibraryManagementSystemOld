@@ -20,7 +20,7 @@ public class Member {
 	private String lastName;
 	private String email;
 	private boolean status;
-	
+
 	@OneToMany(targetEntity = Borrow.class, cascade = CascadeType.ALL)
 	@JoinColumn(name = "member_borrow_fk", referencedColumnName = "id")
 	List<Borrow> borrows;
@@ -72,4 +72,11 @@ public class Member {
 	public void setBorrows(List<Borrow> borrows) {
 		this.borrows = borrows;
 	}
+
+	@Override
+	public String toString() {
+		return "Member [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
+				+ ", status=" + status + ", borrows=" + borrows + "]";
+	}
+
 }

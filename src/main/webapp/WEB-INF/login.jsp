@@ -14,6 +14,20 @@
                 background-size: 100% 100%;
             }
         </style>
+        <script>
+            function login() {
+                var userType = document.getElementById("userType").value;
+                var email = document.getElementById("email").value;
+                if (userType == "member") {
+
+                    window.location.replace("/login/" + email);
+                } else if (userType == "librarian") {
+                    window.location.replace("/librarianLogin/" + email);
+                } else {
+                    alert("ERROR");
+                }
+            }
+        </script>
     </head>
 
     <body>
@@ -24,11 +38,7 @@
         <div style="display: block; width: 50%; margin: auto;">
             <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                <div class="mb-3">
-                    <label for="pass" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="pass">
-                </div>
+                <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp">
 
                 <div>
                     <label for="userType" class="form-label">Who are you?</label>
@@ -50,7 +60,7 @@
         <footer style="position: absolute;bottom: 0;width: 100%;height: 2.5rem;">
             <div style="background-color: rgba(0, 0, 0, 0.2); text-align: center;">
                 2022 Copyright:
-                <a href="/">Student Application</a>
+                <a href="/">LIBRARY MANAGEMENT SYSTEM</a>
             </div>
         </footer>
         </div>
