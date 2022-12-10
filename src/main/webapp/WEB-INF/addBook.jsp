@@ -40,41 +40,41 @@
                 </div>
                 <div class="form-group">
                     <label for="bookTitle">BOOK TITLE</label>
-                    <input type="text" class="form-control" id="bookTitle" placeholder="INTRODUCTION TO ALGORITHMS">
+                    <input type="text" class="form-control" name="bookTitle" id="bookTitle" placeholder="INTRODUCTION TO ALGORITHMS">
                 </div>
                 <div class="form-group">
                     <label for="copies">NO:OF COPIES AVILABLE</label>
-                    <input type="number" class="form-control" id="copies" placeholder="2">
+                    <input type="number" class="form-control" name="copies" id="copies" placeholder="2">
                 </div>
                 <div class="form-group">
                     <label for="rack">Rack</label>
-                    <input type="text" class="form-control" id="rack" placeholder="G">
+                    <input type="text" class="form-control" name="rack" id="rack" placeholder="G">
                 </div>
                 <div class="form-group">
                     <label for="floor">Floor</label>
-                    <input type="number" class="form-control" id="floor" placeholder="1">
+                    <input type="number" class="form-control" name="floor" id="floor" placeholder="1">
                 </div>
                 <div class="form-group">
                     <label for="room">Room</label>
-                    <input type="number" class="form-control" id="room" placeholder="105">
+                    <input type="number" class="form-control" name="room" id="room" placeholder="105">
                 </div>
                 <div class="form-group">
                     <label for="authorId">AUTHOR ID</label>
-                    <input type="number" class="form-control" id="authorId" placeholder="1001">
+                    <input type="number" class="form-control" name="authorId" id="authorId" placeholder="1001">
                     <small><a href="/addAuthor">NEW AUTHOR? ADD HERE</a></small>
                 </div>
                 <div class="form-group">
                     <label for="publisherId">PUBLISHER ID</label>
-                    <input type="number" class="form-control" id="publisherId" placeholder="1001">
+                    <input type="number" class="form-control" name="publisherId" id="publisherId" placeholder="1001">
                     <small><a href="/addPublisher">NEW PUBLISHER? ADD HERE</a></small>
                 </div>
                 <div class="form-group">
                     <label for="edition">EDITION</label>
-                    <input type="number" class="form-control" id="edition" placeholder="2">
+                    <input type="number" class="form-control" name="edition" id="edition" placeholder="2">
                 </div>
                 <div class="form-group">
                     <label for="year">YEAR</label>
-                    <input type="number" class="form-control" id="year" placeholder="2022">
+                    <input type="number" class="form-control" name="year" id="year" placeholder="2022">
                 </div>
 
                 <button type="submit" id="submit" class="btn btn-primary">ADD BOOK</button>
