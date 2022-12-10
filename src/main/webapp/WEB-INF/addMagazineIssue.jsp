@@ -33,51 +33,32 @@
 
         <section
             style="display: block; margin: auto; width: 50%; background-color: #212025; color: aliceblue; border-radius: 2%;">
-            <form style="display: block; padding: 2%;" action="/addBook" method="POST">
+            <form style="display: block; padding: 2%;" action="/addMagazineIssue" method="POST">
                 <div class="form-group">
-                    <label for="book_id">BOOK ID</label>
-                    <input type="number" class="form-control" name="book_id" id="book_id" placeholder="1001">
+                    <label for="issueId">Magazine Issue ID</label>
+                    <input type="number" class="form-control" name="magazineIssueId" id="magazineIssueId"
+                        placeholder="1">
                 </div>
                 <div class="form-group">
-                    <label for="bookTitle">BOOK TITLE</label>
-                    <input type="text" class="form-control" id="bookTitle" placeholder="INTRODUCTION TO ALGORITHMS">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" name="title" placeholder="Climate Change">
                 </div>
                 <div class="form-group">
-                    <label for="copies">NO:OF COPIES AVILABLE</label>
-                    <input type="number" class="form-control" id="copies" placeholder="2">
+                    <label for="datePublished">Date Published</label>
+                    <input type="date" class="form-control" name="datePublished" placeholder="MM-DD-YYYY">
                 </div>
                 <div class="form-group">
-                    <label for="rack">Rack</label>
-                    <input type="text" class="form-control" id="rack" placeholder="G">
+                    <label for="editorId">Editor IDs</label>
+                    <input type="text" class="form-control" name="editorId" placeholder="1,2,3">
+                    <small><a href="/addEditor">NEW Editor? ADD HERE</a></small>
                 </div>
                 <div class="form-group">
-                    <label for="floor">Floor</label>
-                    <input type="number" class="form-control" id="floor" placeholder="1">
-                </div>
-                <div class="form-group">
-                    <label for="room">Room</label>
-                    <input type="number" class="form-control" id="room" placeholder="105">
-                </div>
-                <div class="form-group">
-                    <label for="authorId">AUTHOR ID</label>
-                    <input type="number" class="form-control" id="authorId" placeholder="1001">
-                    <small><a href="/addAuthor">NEW AUTHOR? ADD HERE</a></small>
-                </div>
-                <div class="form-group">
-                    <label for="publisherId">PUBLISHER ID</label>
-                    <input type="number" class="form-control" id="publisherId" placeholder="1001">
-                    <small><a href="/addPublisher">NEW PUBLISHER? ADD HERE</a></small>
-                </div>
-                <div class="form-group">
-                    <label for="edition">EDITION</label>
-                    <input type="number" class="form-control" id="edition" placeholder="2">
-                </div>
-                <div class="form-group">
-                    <label for="year">YEAR</label>
-                    <input type="number" class="form-control" id="year" placeholder="2022">
+                    <label for="contributorId">Contributor IDs</label>
+                    <input type="text" class="form-control" name="contributorId" placeholder="1,2,3">
+                    <small><a href="/addContributor">NEW Contributor? ADD HERE</a></small>
                 </div>
 
-                <button type="submit" id="submit" class="btn btn-primary">ADD BOOK</button>
+                <button type="submit" id="submit" class="btn btn-primary">ADD MAGAZINE ISSUE</button>
             </form>
         </section>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>

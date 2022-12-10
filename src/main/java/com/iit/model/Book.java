@@ -33,4 +33,7 @@ public class Book {
 		}
 	)
 	private List<Author> authors;
+	public int getID() {
+		return this.id;
+	}
 }

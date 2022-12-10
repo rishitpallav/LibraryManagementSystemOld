@@ -33,51 +33,30 @@
 
         <section
             style="display: block; margin: auto; width: 50%; background-color: #212025; color: aliceblue; border-radius: 2%;">
-            <form style="display: block; padding: 2%;" action="/addBook" method="POST">
-                <div class="form-group">
-                    <label for="book_id">BOOK ID</label>
-                    <input type="number" class="form-control" name="book_id" id="book_id" placeholder="1001">
-                </div>
-                <div class="form-group">
-                    <label for="bookTitle">BOOK TITLE</label>
-                    <input type="text" class="form-control" id="bookTitle" placeholder="INTRODUCTION TO ALGORITHMS">
-                </div>
-                <div class="form-group">
-                    <label for="copies">NO:OF COPIES AVILABLE</label>
-                    <input type="number" class="form-control" id="copies" placeholder="2">
-                </div>
-                <div class="form-group">
-                    <label for="rack">Rack</label>
-                    <input type="text" class="form-control" id="rack" placeholder="G">
-                </div>
-                <div class="form-group">
-                    <label for="floor">Floor</label>
-                    <input type="number" class="form-control" id="floor" placeholder="1">
-                </div>
-                <div class="form-group">
-                    <label for="room">Room</label>
-                    <input type="number" class="form-control" id="room" placeholder="105">
-                </div>
+            <form style="display: block; padding: 2%;" action="/addAuthor" method="POST">
                 <div class="form-group">
                     <label for="authorId">AUTHOR ID</label>
-                    <input type="number" class="form-control" id="authorId" placeholder="1001">
-                    <small><a href="/addAuthor">NEW AUTHOR? ADD HERE</a></small>
+                    <input type="number" class="form-control" name="authorId" id="authorId" placeholder="1">
                 </div>
                 <div class="form-group">
-                    <label for="publisherId">PUBLISHER ID</label>
-                    <input type="number" class="form-control" id="publisherId" placeholder="1001">
-                    <small><a href="/addPublisher">NEW PUBLISHER? ADD HERE</a></small>
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" class="form-control" name="firstName" placeholder="THOMAS H.">
                 </div>
                 <div class="form-group">
-                    <label for="edition">EDITION</label>
-                    <input type="number" class="form-control" id="edition" placeholder="2">
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" class="form-control" name="lastName" placeholder="CORMEN">
                 </div>
                 <div class="form-group">
-                    <label for="year">YEAR</label>
-                    <input type="number" class="form-control" id="year" placeholder="2022">
+                    <label for="address">ADDRESS</label>
+                    <input type="text" class="form-control" name="address"
+                        placeholder="534 N Oxford Avenue, Chicago, Illinois">
+                </div>
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" class="form-control" name="email" placeholder="thomas@gmail.com">
                 </div>
 
-                <button type="submit" id="submit" class="btn btn-primary">ADD BOOK</button>
+                <button type="submit" id="submit" class="btn btn-primary">ADD AUTHOR</button>
             </form>
         </section>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>

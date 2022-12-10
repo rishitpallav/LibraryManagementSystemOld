@@ -42,14 +42,14 @@
             </tr>
             <tr>
                 <td>
-                    <button style="font-size: large; width: 100%; color: aliceblue; background-color: #212025;">EVENTS
-                        TODAY</button>
+                    <button style="font-size: large; width: 100%; color: aliceblue; background-color: #212025;">ADD
+                        DOCUMENT</button>
                     <table class="table" style="background-color: lightgrey;">
                         <tr>
-                            <td><a>TEAM MEETING - SOFTWARE ENGINEERING</a></td>
+                            <td><a href="/addBook">ADD BOOK</a></td>
                         </tr>
                         <tr>
-                            <td><a>HW #5 - SOFTWARE ENGINEERING</a></td>
+                            <td><a href="/addMagazine">ADD MAGAZINE</a></td>
                         </tr>
                         <tr>
                             <td><a>TEAM PROJECT - DATABASE ENGINEERING</a></td>
