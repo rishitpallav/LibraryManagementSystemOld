@@ -55,13 +55,7 @@ public class LibrarianController {
 		return mv;
 	}
 
-	@GetMapping("/addBook")
-	public ModelAndView addBook() {
-		System.out.println("id");
-		ModelAndView mv = new ModelAndView();
-		mv.setViewName("addBook");
-		return mv;
-	}
+	
 
 	@GetMapping("/addMagazine")
 	public ModelAndView addMagazine() {
