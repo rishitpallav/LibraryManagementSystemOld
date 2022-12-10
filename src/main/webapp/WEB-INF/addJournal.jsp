@@ -33,19 +33,24 @@
 
         <section
             style="display: block; margin: auto; width: 50%; background-color: #212025; color: aliceblue; border-radius: 2%;">
-            <form style="display: block; padding: 2%;" action="/addMagazine" method="POST">
+            <form style="display: block; padding: 2%;" action="/addJournal" method="POST">
                 <div class="form-group">
-                    <label for="magazineId">Magazine ID</label>
-                    <input type="number" class="form-control" name="magazineId" id="magazineId" placeholder="2001">
+                    <label for="journalId">Journal ID</label>
+                    <input type="number" class="form-control" name="journalId" id="journalId" placeholder="2001">
                 </div>
                 <div class="form-group">
-                    <label for="magazineName">Magazine Name</label>
-                    <input type="text" class="form-control" name="magazineName" placeholder="Pinnacle Monthly">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" name="title" placeholder="The Sun Register">
                 </div>
                 <div class="form-group">
-                    <label for="issueId">Issue ID</label>
+                    <label for="publisherId">Publisher ID</label>
+                    <input type="text" class="form-control" name="publisherId" placeholder="1,2,3">
+                    <small><a href="/addPublisher">NEW PUBLISHER? ADD HERE</a></small>
+                </div>
+                <div class="form-group">
+                    <label for="issueId">Journal Issue ID</label>
                     <input type="text" class="form-control" name="issueId" placeholder="1,2,3">
-                    <small><a href="/addMagazineIssue">NEW MAGAZINE ISSUE? ADD HERE</a></small>
+                    <small><a href="/addJournalIssue">NEW JOURNAL ISSUE? ADD HERE</a></small>
                 </div>
 
                 <button type="submit" id="submit" class="btn btn-primary">ADD MAGAZINE</button>

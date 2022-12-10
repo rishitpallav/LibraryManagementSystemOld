@@ -52,7 +52,7 @@
                             <td><a href="/addMagazine">ADD MAGAZINE</a></td>
                         </tr>
                         <tr>
-                            <td><a>TEAM PROJECT - DATABASE ENGINEERING</a></td>
+                            <td><a href="/addJournal">ADD JOURNAL</a></td>
                         </tr>
                     </table>
                 </td>
